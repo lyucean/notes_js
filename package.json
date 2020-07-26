@@ -1,0 +1,11 @@
+{
+  "name": "notes_js",
+  "version": "1.0.0",
+  "description": "My notes for JS",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "lyucean@gmail.com",
+  "license": "ISC"
+}
