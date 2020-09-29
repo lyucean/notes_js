@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="drawing"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.13/svg.js"></script>
+<script>
+  var draw = SVG().addTo('#drawing').size(500, 500);
+  // var circle = draw.line(0, 0, 100, 150).fill('#f06');
+  var polygon = draw.polygon('200,200 200,220 300,220 300,200')
+  polygon.animate(1000).plot([[200,200], [200,220], [300,320], [300,300]]).loop(0, true)
+
+  var polygon2 = draw.polygon('600,200 600,220 300,220 300,200')
+  polygon2.animate(1000).plot([[500,200], [500,220], [300,320], [300,300]]).loop(0, true)
+</script>
+</body>
+</html>
